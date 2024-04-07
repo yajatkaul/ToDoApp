@@ -1,0 +1,78 @@
+body{
+    background-image: linear-gradient(to bottom right, blue,purple);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 100px;
+    width: 550px;
+    height: fit-content;
+    max-height: 750px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+}
+.search{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar{
+    position: relative;
+    left: 9%;
+    flex: 1;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    outline: 0;
+    padding-left: 30px;
+    border: 0;
+    background-color: rgb(199, 199, 199);
+    font-size: 20px;
+}
+.AddBtn{
+    height: 60px;
+    width: 130px;
+    border-radius: 40px;
+    border: 0;
+    background-color: rgb(255, 101, 45);
+    color: white;
+    position: relative;
+    right: 50px;
+    font-size: 30px;
+}
+.AddBtn:hover{
+    background-color: rgb(190, 73, 30);
+    transition: 100ms;
+}
+.header{
+    color: rgb(1, 1, 185);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#list-cont li{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+#list-cont li::before{
+    list-style: none;
+    cursor: pointer;
+    position: absolute;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+.tasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
