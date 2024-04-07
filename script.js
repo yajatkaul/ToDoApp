@@ -24,3 +24,9 @@ taskbox.addEventListener("click", function(e){
     }
 
 },false);
+
+document.addEventListener('keypress', function(e){
+    if(e.key === "Enter"){
+        addTask();
+    }
+});
