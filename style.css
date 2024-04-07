@@ -60,8 +60,8 @@ body{
 }
 #list-cont li{
     list-style: none;
-    cursor: pointer;
     position: relative;
+    cursor: pointer;
 }
 #list-cont li::before{
     list-style: none;
