@@ -14,3 +14,13 @@ function addTask(){
         li.appendChild(span);
     }
 }
+
+taskbox.addEventListener("click", function(e){
+    if(e.target.hasClass === "checked"){
+        e.target.classlist.toggle("checked");
+    }
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+    }
+
+},false);
